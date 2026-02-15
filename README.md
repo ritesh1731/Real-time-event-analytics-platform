@@ -428,19 +428,3 @@ real-time-analytics-platform/
 | **3 partitions = 3 consumers** | Maximum horizontal scaling for this setup |
 
 ---
-
-## 🎯 Resume Bullet Points
-
-```
-• Designed a real-time event pipeline ingesting 10,000+ events/sec using Apache Kafka
-  with 3 partitioned topics, routing user/system events with producer idempotence enabled
-
-• Implemented a dual-write Kafka consumer persisting events to PostgreSQL and Elasticsearch
-  simultaneously, with Redis caching pre-aggregated metrics for sub-10ms dashboard queries
-
-• Built fault-tolerance via Dead Letter Queue (DLQ) for failed events, Resilience4j
-  circuit breakers on DB/ES writes, and manual offset commits for guaranteed processing
-
-• Containerized all 3 microservices with Docker and authored Kubernetes manifests supporting
-  horizontal scaling of Kafka consumers to match partition count (3 replicas × 3 partitions)
-```
